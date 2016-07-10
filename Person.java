@@ -34,4 +34,13 @@ public class Person {
 	boolean isEmployee(){
 		return this instanceof Employee ? true : false;
 	}
+	protected Object clone(){
+		try {
+			return super.clone();
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}
+	}
 }
