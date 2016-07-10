@@ -27,4 +27,11 @@ public class Person {
 		System.out.println(name + " is " + (isMale ? "male" : "female"));
 	}
 	
+	boolean isStudent(){
+		return this instanceof Student ? true : false;
+	}
+	
+	boolean isEmployee(){
+		return this instanceof Employee ? true : false;
+	}
 }
