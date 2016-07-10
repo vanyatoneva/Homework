@@ -15,6 +15,9 @@ public class Person {
 		if(age > 0 ){
 			this.age = age; 
 		}
+		else{
+			age =0;
+		}
 		this.isMale = isMale;
 	}
 	
